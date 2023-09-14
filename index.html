@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Burger Menu</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!--<i class="fa-solid fa-check"></i>-->
+<!--<i class="fa-solid fa-chevron-up"></i>-->
+<header>
+    <div class="container">
+        <h1>create your burger</h1>
+
+    </div>
+</header>
+<main>
+    <div class="container">
+        <div class="content">
+            <div class="big_burger">
+                <img src="images/big_burger.png" alt="">
+            </div>
+
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="container"></div>
+</footer>
+
+
+<div class="customize_order">
+    <div class="container">
+        <div class="all_options">
+            <div class="burger_size ">
+                <h2>Burger size</h2>
+                <div class="accordion hidden">
+                    <form action="" name="burger_size_form">
+                        <div class="small">
+                            <div class="small_info">
+                                <label for="small">
+                                    small
+                                </label>
+                                <p>185 kcal</p>
+                            </div>
+
+
+                            <input type="radio" name="check_size" id="small" value="small" checked>
+                        </div>
+                        <div class="big">
+                            <div class="big_info">
+                                <label for="big">
+                                    big
+                                </label>
+                                <p>345 kcal</p>
+                            </div>
+
+                            <input type="radio" name="check_size" id="big" value="big">
+
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+            <div class="condiments ">
+                <h2>Condiments</h2>
+                <div class="accordion hidden">
+                    <form action="#" name="condiments_form" class="condiments_form">
+                        <div class="Ketchup">
+                            <label for="Ketchup">Ketchup</label>
+                            <input type="checkbox" name="condiments" id="Ketchup" value="ketchup">
+                        </div>
+                        <div class="Mayo">
+                            <label for="Mayo">Mayo</label>
+                            <input type="checkbox" name="condiments" id="Mayo" value="mayo">
+                        </div>
+                        <div class="Mustard">
+                            <label for="Mustard">Mustard</label>
+                            <input type="checkbox" name="condiments" id="Mustard" value="mustard">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="vegetables">
+                <h2>Vegetables</h2>
+                <div class="accordion hidden">
+                    <form action="#" name="vegetables_form" class="vegetables_form">
+                        <div class="onion">
+                            <h3>onion</h3>
+                            <p class="onion_kcal"></p>
+                            <div class="quantity">
+                                <button type="button" class="prev">-</button>
+                                <input type="text" name="onion" value="">
+                                <button type="button" class="next">+</button>
+                            </div>
+
+                        </div>
+                        <div class="tomatoes">
+                            <h3>Tomatoes</h3>
+                            <p class="tomatoes_kcal"></p>
+                            <div class="quantity">
+                                <button type="button" class="prev">-</button>
+                                <input type="text" name="tomatoes" value="">
+                                <button type="button" class="next">+</button>
+                            </div>
+
+                        </div>
+                        <div class="pepper">
+                            <h3>pepper</h3>
+                            <p class="pepper_kcal"></p>
+                            <div class="quantity">
+                                <button type="button" class="prev">-</button>
+                                <input type="text" name="pepper"  value="">
+                                <button type="button" class="next">+</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <button type="button" class="confirm_order">Place your order</button>
+        </div>
+    </div>
+</div>
+<div class="order_confirmation">
+    <div class="container">
+        <div class="receipt hidden">
+            <h2>YOUR ORDER : <span></span> </h2>
+            <div class="rec_description">
+                <p class="rec_size">Size : <span></span> </p>
+                <div class="rec_condiments">
+                    <p>Condiments:</p>
+                    <ul></ul>
+                </div>
+                <div class="rec_veggies">
+                    <p>Vegetables</p>
+                    <ul></ul>
+                </div>
+                <div class="rec_calories">
+                    <p>Total calories : <span></span></p>
+                </div>
+<!--                <p>price</p>-->
+            </div>
+        </div>
+    </div>
+</div>
+<script src="scripts/bill.js"></script>
+<script src="scripts/veggies.js"></script>
+<script src="scripts/js.js"></script>
+<script src="https://kit.fontawesome.com/973f964fd1.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
